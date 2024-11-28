@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>My GitHub Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #333366;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        #dynamicContent {
+            margin-top: 20px;
+            color: #ff4500;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <p id="dynamicContent"></p>
+
+    <script>
+        function showDateTime() {
+            var date = new Date();
+            var dateTime = "Current time: " + date.toLocaleTimeString();
+            document.getElementById('dynamicContent').innerHTML = dateTime;
+        }
+
+        // Update the time every second
+        setInterval(showDateTime, 1000);
+    </script>
 </body>
 </html>
