@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
     <title>My GitHub Page</title>
     <style>
         body {
@@ -9,23 +11,56 @@
             margin: 40px;
             text-align: center;
         }
+
         h1 {
             color: #333366;
         }
+
         p {
             color: #666;
             font-size: 18px;
         }
+
         #dynamicContent {
             margin-top: 20px;
             color: #ff4500;
         }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .contact a {
+            color: #333366;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <h1>Welcome to My Page</h1>
     <p>I'm hosted with GitHub Pages.</p>
     <p id="dynamicContent"></p>
+
+    <!-- Contact Information -->
+    <div class="contact">
+        <p>Email: <a href="mailto:wkh16@mail.ustc.edu.cn">wkh16@mail.ustc.edu.cn</a></p>
+        <p>QQ: <a href="mailto:1531051129@qq.com">1531051129@qq.com</a></p>
+    </div>
+
+    <!-- Research Interests -->
+    <h2>我的研究兴趣 My Research Interests</h2>
+    <p>环境体波干涉术 Ambient Bodywave Interferometry.</p>
+    <p>高性能计算 High Performance Computing.</p>
+
+    <!-- Link to Research Content -->
+    <h2>Explore My Research</h2>
+    <p><a href="research.html">Click here to view my research projects and publications.</a></p>
 
     <script>
         function showDateTime() {
@@ -38,4 +73,5 @@
         setInterval(showDateTime, 1000);
     </script>
 </body>
+
 </html>
